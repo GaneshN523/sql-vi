@@ -1,0 +1,92 @@
+/* Centering the container and setting a fixed width */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+
+  }
+  
+  /* Styling the content box */
+  .content {
+    width: 450px; /* Adjusted width for better usability */
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for modern effect */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Styling */
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  /* Form Input Styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .input, .select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus, .select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+    outline: none;
+  }
+  
+  /* Checkbox Wrapper */
+  .checkboxWrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Button Styling */
+  .button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background: linear-gradient(90deg, #764ba2, #667eea);
+    transform: scale(1.05);
+  }
+  
+  /* Response Section */
+  .responseSection {
+    padding: 12px;
+    border-radius: 6px;
+    background: #f4f4f4;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  

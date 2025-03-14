@@ -1,0 +1,60 @@
+/* Wrapper for the main content area and the sidebar */
+.wrapper {
+    display: flex;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the active operations component */
+  .operationsContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-right: 330px; /* Leave space for the fixed sidebar */
+  }
+  
+  .part {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  /* Fixed sidebar for buttons and operation results */
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 275px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for the sidebar buttons */
+  .buttonContainer {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the buttons inside the sidebar */
+  .buttonContainer button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .buttonContainer button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the active button */
+  .active {
+    background-color: #0056b3;
+  }
+  

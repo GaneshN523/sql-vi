@@ -1,0 +1,30 @@
+/* Center everything */
+.container {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #e6e9f0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Query Styling */
+.query {
+    font-family: monospace;
+    background: #1e1e2f;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    text-align: left;
+    display: inline-block;
+    max-width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth transitions */
+.container, .query {
+    transition: all 0.3s ease-in-out;
+}

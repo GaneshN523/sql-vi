@@ -1,0 +1,137 @@
+/* Center everything */
+.dataGridContainer {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 50%;
+    background: linear-gradient(135deg, #ffffff, #e6e9f0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    color: black;
+}
+
+/* Title */
+.title {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    color: black;
+}
+
+.tableHeader {
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.tableRow:nth-child(even) {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.tableCell {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+
+/* Input fields */
+.input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    text-align: center;
+    color: black;
+}
+
+/* Buttons */
+.updateButton,
+.deleteButton {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+    width: 80px;
+}
+
+.insertButton {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    
+}
+
+
+.insertButton, .updateButton, .deleteButton {
+    background: #007bff;
+}
+
+.insertButton:hover, .updateButton:hover, .deleteButton:hover {
+    background: linear-gradient(135deg, #0056b3, #004094);
+    transform: scale(1.05);
+}
+
+/* No Data Text */
+.noDataText {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Insert New Row */
+.insertTitle {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 10px;
+    background: #fff;
+    text-align: center;
+    color: black;
+}
+
+/* Add smooth transitions */
+button, input, textarea {
+    transition: all 0.3s ease-in-out;
+}

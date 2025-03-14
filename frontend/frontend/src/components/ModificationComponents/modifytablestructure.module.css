@@ -1,0 +1,93 @@
+/* Centering the Container */
+.modifyTableContainer {
+    width: 50%;
+    margin: 20px auto;  /* Centers the container */
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+.section h4 {
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Input Group */
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.inputField {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.inputField:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+.addButton,
+.applyButton {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.addButton:hover,
+.applyButton:hover {
+    background: linear-gradient(135deg, #0056b3, #004094);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .modifyTableContainer {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .inputField, 
+    .addButton, 
+    .applyButton {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    /* Add right margin to allow space for the fixed sidebar */
+    margin-right: 270px;
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 315px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .sidebar button {
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .activeButton {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,190 @@
+/* Centered Container */
+.container {
+  max-width: 45%;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: black; /* Ensures all text inside container is black */
+  margin-top: -10px;
+}
+
+/* Title */
+.title {
+  color: black; /* Changed from blue to black */
+  margin-bottom: 25px;
+}
+
+/* Form Groups */
+.formGroup {
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  color: black; /* Ensures all text inside formGroup is black */
+}
+
+/* Labels */
+.label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black; /* Changed from dark gray to black */
+  margin-bottom: 8px;
+}
+
+/* Inputs and Selects */
+.input {
+  width: 510px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  background-color: #f8f9fa;
+  color: black; /* Text inside input fields is black */
+}
+
+.select {
+  width: 537px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  background-color: #f8f9fa;
+  color: black; /* Text inside input fields is black */
+}
+
+
+.input:focus, .select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+  color: black;
+}
+
+/* Dynamic Rows */
+.conditionRow, .joinRow, .aggregateRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+/* Centered Button Group */
+/* Button Group - Centering All Buttons */
+.buttonGroup {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Centering Individual Buttons */
+.addButton, .removeButton {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.executeButton {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/* Add & Remove Buttons */
+.addButton, .removeButton {
+  background: #007bff;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+}
+
+.addButton:hover, .removeButton:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Execute Button */
+.executeButton {
+  background: #0056b3;
+  font-size: 1.1rem;
+  padding: 14px 24px;
+  box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
+}
+
+.executeButton:hover {
+  background: #004094;
+  transform: scale(1.08);
+}
+
+
+/* Result Section */
+.resultSection {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: black; /* Ensures all text inside resultSection is black */
+}
+
+/* Result Table */
+.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.resultTable th, .resultTable td {
+  border: 1px solid #ccc;
+  padding: 14px;
+  text-align: center;
+  font-size: 1rem;
+  color: black; /* Ensures table content is black */
+}
+
+.resultTable th {
+  background: #007bff;
+  font-weight: bold;
+}
+
+.resultTable tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* Smooth Hover Effect */
+.resultTable tr:hover {
+  background: #dbe9ff;
+}

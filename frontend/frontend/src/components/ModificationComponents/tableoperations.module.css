@@ -1,0 +1,93 @@
+/* Fixed Right Sidebar */
+.container {
+    width: 275px; /* Fixed width */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; /* Full height */
+    padding: 20px;
+    border-radius: 8px 0 0 8px; /* Rounded left corners */
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #ddd;
+    text-align: center;
+    overflow-y: auto; /* Enables scrolling if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Section Styling */
+.createTable, 
+.selectTable, 
+.deleteTable {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content */
+}
+
+
+/* Input and Select Fields */
+.createTable input, 
+.selectTable select {
+    width: 90%;
+    padding: 12px;
+    margin: 5px;
+    font-size: 14px;
+    color: #000; /* Ensures dropdown text is BLACK */
+    background: rgba(245, 245, 245, 0.9); /* Dark white */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.createTable input {
+    cursor: default;
+}
+
+/* Ensure no resizing on focus */
+.createTable input:focus, 
+.selectTable select:focus {
+    border-color: #888;
+    outline: none;
+}
+
+/* Buttons */
+.createTable button, 
+.deleteTable button {
+    width: 85%; /* Fixed width */
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Button Hover (Subtle Effect) */
+.createTable button:hover, 
+.deleteTable button:hover {
+    background: #f8f8f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width on small screens */
+        height: auto;
+        position: relative;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,81 @@
+/* DataGrid.module.css */
+.dataGridContainer {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-width: 80%;
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.th, .td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.th {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+}
+
+.inputField {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #0056b3, #004094);
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .dataGridContainer {
+        width: 95%;
+        padding: 10px;
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}

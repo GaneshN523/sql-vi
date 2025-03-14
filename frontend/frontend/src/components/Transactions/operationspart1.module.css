@@ -1,0 +1,100 @@
+/* File: src/components/operationspart1.module.css */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    margin-left: 120px;
+  }
+  
+  .heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .subheading {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #444;
+    text-transform: capitalize;
+  }
+  
+  /* Grouping inputs and buttons in a flex row */
+  .inputGroup,
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  
+  /* Ensuring uniform width for inputs, dropdowns, and buttons */
+  .input,
+  .select,
+  button {
+    width: 220px;
+    max-width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f8f8f8;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Enhancing focus effect for better UX */
+  .input:focus,
+  .select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Making buttons consistent in size & spacing */
+  button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #0056b3, #003f7f);
+    box-shadow: 0 5px 8px rgba(0, 91, 187, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background: #003f7f;
+    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.2);
+    transform: translateY(0);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  

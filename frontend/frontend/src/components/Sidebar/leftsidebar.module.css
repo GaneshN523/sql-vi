@@ -1,0 +1,63 @@
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.button {
+  width: 85%;
+  padding: 12px 18px;
+  background: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button.active {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}

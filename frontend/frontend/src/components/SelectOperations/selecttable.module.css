@@ -1,0 +1,54 @@
+/* Sidebar container styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 315px;
+    height: 100vh; /* Full viewport height */
+    background: rgba(255, 255, 255, 0.7); /* Faint white with slight transparency */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 12px 0 0 12px;
+    backdrop-filter: blur(8px); /* Blurred glass effect */
+  }
+  
+  /* Form group styling */
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .h3 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000; /* Ensures label text is BLACK */
+    letter-spacing: 0.5px;
+  }
+  
+  /* Select element styling */
+  .select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #000; /* Ensures dropdown text is BLACK */
+    background: rgba(245, 245, 245, 0.9); /* Dark white */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Dropdown Hover and Focus */
+  .select:hover,
+  .select:focus {
+    border-color: #666;
+    background: rgba(240, 240, 240, 1);
+    color: #000; /* Ensures text stays BLACK on hover */
+  }
+  

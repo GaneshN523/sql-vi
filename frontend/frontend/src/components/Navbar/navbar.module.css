@@ -1,0 +1,78 @@
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 320px; /* Leaves space for left sidebar */
+    right: 300px; /* Leaves space for right sidebar */
+    height: 60px;
+    background: rgba(59, 130, 246, 0.8); /* Semi-transparent blue */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 65.4%;
+     /* Rounded corners */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ffffff, #dbeafe);
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Links */
+.navLinks {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+/* Navigation Links - Styling */
+.navLinks li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Underline effect */
+.navLinks li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(90deg, #ffffff, #dbeafe);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.navLinks li a:hover {
+    color: #dbeafe;
+    transform: translateY(-2px);
+}
+
+.navLinks li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Active Link Styling */
+.navLinks li a.active {
+    color: #dbeafe;
+    font-weight: bold;
+    transform: scale(1.1);
+}
