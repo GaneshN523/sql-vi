@@ -1,25 +1,26 @@
 🛠️ SQL Visualizer
 Overview
-SQL Visualizer is an interactive learning tool designed to help learners understand SQL concepts through a graphical UI. Instead of manually writing SQL queries, users can perform database operations visually, and the tool will automatically generate the corresponding SQL queries.
+SQL Visualizer is an interactive learning tool that helps users understand SQL concepts through an intuitive graphical UI. Instead of manually writing SQL queries, users can perform database operations visually, and the tool automatically generates real-time SQL queries.
 
-This project is perfect for beginners who want to learn SQL intuitively and for advanced users who wish to visualize query execution.
+This project is built using FastAPI, PostgreSQL, and React for a fast and scalable experience.
 
 🌟 Features
-✔️ Graphical Query Builder – Drag-and-drop elements to construct SQL queries.
-✔️ Real-Time Query Generation – Automatically converts UI operations into SQL queries.
-✔️ SQL Execution & Results Display – Execute queries and see instant database changes.
-✔️ Table Relationship Visualization – Interactive ER diagrams to understand table relations.
-✔️ Query Optimization Insights – Provides hints on improving query performance.
-✔️ Beginner-Friendly Interface – No need for prior SQL knowledge.
+✔️ Graphical Query Builder – Create SQL queries through a drag-and-drop interface.
+✔️ Real-Time Query Generation – Automatically converts UI actions into SQL queries.
+✔️ Live SQL Execution – Run generated queries and view results instantly.
+✔️ ER Diagram Visualization – Understand table relationships visually.
+✔️ Supports PostgreSQL – Uses a real relational database for execution.
+✔️ Beginner & Advanced User Friendly – Ideal for learning and practicing SQL.
 
 📌 Tech Stack
 Frontend
 React.js (Vite.js) – Fast UI rendering
-D3.js / Chart.js – For visualizing table relationships
-Tailwind CSS – Responsive UI
+Tailwind CSS – Modern and responsive UI
 Backend
-FastAPI / Node.js (Express) – Handles query processing
-PostgreSQL / MySQL – Database support for executing queries
+FastAPI – Handles query processing and API interactions
+PostgreSQL – Relational database for executing queries
+SQLAlchemy – ORM for database operations
+Pydantic – Data validation and serialization
 🚀 Getting Started
 1️⃣ Clone the Repository
 bash
@@ -27,42 +28,43 @@ Copy
 Edit
 git clone https://github.com/yourusername/sql-visualizer.git
 cd sql-visualizer
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
-npm install
-3️⃣ Start the Development Server
-bash
-Copy
-Edit
-npm run dev
-This will start the app on http://localhost:5173/ (default Vite port).
-
-4️⃣ (Optional) Start the Backend
-If the project includes a backend for database interactions:
-
+2️⃣ Set Up the Backend (FastAPI + PostgreSQL)
+Install dependencies
 bash
 Copy
 Edit
 cd backend
-pip install -r requirements.txt  # (For FastAPI)
-uvicorn main:app --reload  # (Runs the API)
-🖼️ Screenshots (Add UI Screenshots Here!)
-Query Builder	ER Diagram
-Example Screenshot	Example Screenshot
-🏗️ How It Works
-1️⃣ Users interact with tables and fields from the UI.
-2️⃣ The app generates SQL queries dynamically as operations are performed.
-3️⃣ Users can execute queries and view the results in real-time.
-4️⃣ The ER Diagram visualizer helps users understand relationships between tables.
-5️⃣ (Optional) Query Optimization tips guide users on improving query efficiency.
+pip install -r requirements.txt
+Configure PostgreSQL
+Make sure you have PostgreSQL installed and running. Update the database configuration in config.py:
 
-🛠️ Customization & Contribution
-Want to contribute? Follow these steps:
+python
+Copy
+Edit
+DATABASE_URL = "postgresql://username:password@localhost:5432/sql_visualizer"
+Run Database Migrations (if using SQLAlchemy)
+bash
+Copy
+Edit
+alembic upgrade head
+Start the FastAPI Server
+bash
+Copy
+Edit
+uvicorn main:app --reload
+The API will be available at http://127.0.0.1:8000.
 
-Fork the repository
-Create a new branch (git checkout -b feature-query-optimization)
-Commit your changes (git commit -m "Added query optimization suggestions")
-Push to the branch (git push origin feature-query-optimization)
-Open a pull request 🚀
+3️⃣ Set Up the Frontend (React + Vite.js)
+Install dependencies
+bash
+Copy
+Edit
+cd frontend
+npm install
+Start the Development Server
+bash
+Copy
+Edit
+npm run dev
+The app will be available at http://localhost:5173/.
+
